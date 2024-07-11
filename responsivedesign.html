@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 10px;
+            border: 10px red solid;
+            width: 100wh;
+            height: 100vh ;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        #first{
+             /* font-size:  3em; /* means font size is now 30, its like 3 into 10. Basically it means fontsize= 3x container size*/
+            /* padding: 3em;  /* but here, the padding is like 90, bcs 3 into 30, 30 is the font size, basically padding =m 3x font size of first */
+        }
+        #second{
+            /* font-size: 3rem;  /* does changes according to the html size, the font size is now 75, 25*3=75 */
+             /*padding: 3rem;    /* does changees according to the HTML size not font size, so its like also 75, 25*3=75 */ 
+  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">this is a heading </h1>
+        <h1 id="second" >this is a second heading </h1>
+        <h1 id="third">this is third heading </h1>
+    </div>
+    
+</body>
+</html>

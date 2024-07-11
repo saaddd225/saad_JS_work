@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+    <script>
+
+        /* 
+        let p = new Promise((resolve, reject) => {
+            let a = 1+2 
+            if (a ==2 ) {
+                resolve("success")
+            }
+            else {
+                reject("failed")
+            }
+
+
+        })
+
+        p.then((message) => {
+            console.log("this is in the then" + message)
+        }) .catch((message) => {
+            cpnsole.log("this is in catch" + message)
+        }) 
+
+    */ 
+   let promise = new Promise(function(resolve,reject){
+    alert("hello in promise")
+    resolve(56)
+   })
+    console.log("hello")
+    setTimeout(function(){
+        console.log("hello in 2")
+    } , 2000 ) 
+    setTimeout(function(){
+        console.log("hello in 2")
+    } , 2000 ) 
+    setTimeout(function(){
+        console.log("hello in 2")
+    } , 2000 ) 
+    setTimeout(function(){
+        console.log("hello in 2")
+    } , 2000 ) 
+
+    console.log("my name is" + "saad")
+console.log(promise)
+
+
+
+
+
+    </script>
+</body>
+</html>
